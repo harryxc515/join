@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: tg-join-hider-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: DEVELOPER_CHAT_ID
+        sync: false
+      - key: MONGO_URI
+        sync: false

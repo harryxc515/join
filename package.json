@@ -1,0 +1,21 @@
+{
+  "name": "tg-join-hider-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot that silently deletes join/leave messages in groups, with MongoDB stats and Render deployment support.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.3.4",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
